@@ -1,0 +1,48 @@
+
+Loading weights from backup/Final_tiny_2class/yolo_tiny_2class_3000.weights...Done!
+0. CROP : 0.750 ms
+
+1. CONVOLUTIONAL : 60.866 ms
+
+2. MAXPOOL : 9.275 ms
+
+3. CONVOLUTIONAL : 109.939 ms
+
+4. MAXPOOL : 4.481 ms
+
+5. CONVOLUTIONAL : 93.833 ms
+
+6. MAXPOOL : 2.222 ms
+
+7. CONVOLUTIONAL : 83.507 ms
+
+8. MAXPOOL : 2.392 ms
+
+9. CONVOLUTIONAL : 82.052 ms
+
+10. MAXPOOL : 0.560 ms
+
+11. CONVOLUTIONAL : 86.421 ms
+
+12. MAXPOOL : 0.306 ms
+
+13. CONVOLUTIONAL : 88.651 ms
+
+14. CONVOLUTIONAL : 177.051 ms
+
+15. CONVOLUTIONAL : 176.800 ms
+
+16. CONNECTED : 4.790 ms
+
+17. CONNECTED : 0.394 ms
+
+18. DROPOUT : 0.003 ms
+
+19. CONNECTED : 0.865 ms
+
+20. DETECTION : 0.007 ms
+
+test.jpg: Predicted in 0.985378 seconds.
+stopsign: 0.35
+yieldsign: 0.23
+

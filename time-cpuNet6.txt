@@ -1,0 +1,30 @@
+Loading weights from backup/Final_tiny_2class/cpuNet6_6000.weights...Done!
+Enter Image Path: test.jpg
+
+0. CROP : 0.273 ms
+
+1. CONVOLUTIONAL : 17.737 ms
+
+2. MAXPOOL : 1.672 ms
+
+3. CONVOLUTIONAL : 9.332 ms
+
+4. MAXPOOL : 0.953 ms
+
+5. CONVOLUTIONAL : 6.707 ms
+
+6. MAXPOOL : 0.312 ms
+
+7. CONNECTED : 1.232 ms
+
+8. CONNECTED : 0.384 ms
+
+9. DROPOUT : 0.004 ms
+
+10. CONNECTED : 0.855 ms
+
+11. DETECTION : 0.002 ms
+
+The 2nd time, test.jpg: Predicted in 0.039539 seconds.
+stopsign: 0.63
+
