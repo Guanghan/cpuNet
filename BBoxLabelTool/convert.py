@@ -34,10 +34,7 @@ def convert(size, box):
 mypath = "labels/stopsign_original/"
 outpath = "labels/stopsign/"
 cls = "stopsign"
-
-#mypath = "labels/yieldsign_original/"
-#outpath = "labels/yieldsign/"
-#cls = "yieldsign"
+#mypath = "labels/yieldsign_original/" #outpath = "labels/yieldsign/" #cls = "yieldsign"
 
 if cls not in classes:
     exit(0)
@@ -62,7 +59,6 @@ for txt_name in txt_name_list:
     print("Input:" + txt_path)
     txt_file = open(txt_path, "r")
     lines = txt_file.read().split('\r\n')   #for ubuntu, use "\r\n" instead of "\n"
-    
     """ Open output text files """
     txt_outpath = outpath + txt_name
     print("Output:" + txt_outpath)

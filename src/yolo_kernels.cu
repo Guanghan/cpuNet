@@ -14,7 +14,7 @@ extern "C" {
 }
 
 /* Change class number here */
-#define CLS_NUM 2
+#define CLS_NUM 3
 
 #ifdef OPENCV
 #include "opencv2/highgui/highgui.hpp"

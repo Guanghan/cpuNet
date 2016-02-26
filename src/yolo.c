@@ -10,19 +10,19 @@
 #endif
 
 /* Change class number here */
-#define CLASSNUM 2
+#define CLASSNUM 3
 
 /* Change class names here */
-char *voc_names[] = {"stopsign", "yieldsign"};
+char *voc_names[] = {"stop", "pedestrianCrossing", "signalAhead"};
 image voc_labels[CLASSNUM];
 
 void train_yolo(char *cfgfile, char *weightfile)
 {
     /* Change training folders here */
-    char *train_images = "/Guanghan/dev/darknet-video-2class/BBoxLabelTool/train.txt";
+    char *train_images = "/u03/Guanghan/dev/LISA/LISA4YOLO_DATASET/training.txt";
 
     /* Change output weight folders here */
-    char *backup_directory = "/Guanghan/dev/darknet-video-2class/backup/Final_tiny_2class/";
+    char *backup_directory = "/Guanghan/dev/darknet-video-2class/backup/cpu_3class/";
 
     srand(time(0));
     data_seed = time(0);
