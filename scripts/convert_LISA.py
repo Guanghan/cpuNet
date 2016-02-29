@@ -39,7 +39,6 @@ def processROI(xmin, ymin, xmax, ymax, img_path, txt_path, cls_id):
     w= int(im.size[0])
     h= int(im.size[1])
 
-    #print(w, h)
     b = (float(xmin), float(xmax), float(ymin), float(ymax))
     bb = convert((w,h), b)
     print(bb)
@@ -57,8 +56,6 @@ createFolder(Lisa4Yolo_dataset)
 createFolder(images_fold)
 createFolder(labels_fold)
 
-#cls_id = classes.index(cls)
-
 """ Training image list (write)"""
 train_file = open('%s/training.txt'%(Lisa4Yolo_dataset), 'w')
 
@@ -68,7 +65,6 @@ reader = csv.reader(lisa_file,delimiter=';')
 
 """ Process """
 for row in reader:
-    #print(row[0]
     img_name = os.path.basename(row[0])
     base_name, img_ext = os.path.splitext(img_name)
     annotate_tag = row[1]
@@ -77,12 +73,12 @@ for row in reader:
         createFolder(os.path.join(images_fold, annotate_tag))
         createFolder(os.path.join(labels_fold, annotate_tag))
 
-        """ Copy images to folders """
+        """ Copy images to folders (write) """
         img_path = os.path.join(images_fold, annotate_tag, img_name)
         if COPY_IMGS=='true' and not os.path.exists(img_path):
             copyfile(row[0], img_path)
 
-        """ Prepare for output text files """
+        """ Prepare for output text files (write) """
         txt_name = base_name + '.txt'
         txt_path = os.path.join(labels_fold, annotate_tag, txt_name)
         print("Output text file:" + txt_path)
